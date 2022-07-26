@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(image1.png);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background: rgb(0, 100, 0);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: antiquewhite;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.active, .menu-bar ul li:hover
+{
+background-color: aqua;
+border-radius: 1px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background:rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px  rgb(98, 162, 253);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px  rgb(98, 162, 253);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+h1{
+   text-align: center; 
+   margin-top: 200px;
+   color: rgb(240, 250, 230);
+}
+h3{
+    text-align: center; 
+   margin-top: 0px;
+   color: rgb(240, 250, 230);
+}
+.my-button{
+    padding: 10px;
+    margin-left: 550px;
+    text-align: center; 
+   margin-top: 0px;
+   color: rgb(37, 11, 184);
+   display: inline;
+   border-radius: 25px;
+    
+
+}
+.my-button-1:hover{
+    padding: 10px;
+    text-align: center; 
+    margin-top: 0px;
+   color: rgb(11, 184, 14);
+   display: inline;
+   border-radius: 25px;
+    
+}
